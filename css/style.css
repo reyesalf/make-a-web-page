@@ -1,0 +1,83 @@
+/* All the selectors are included at the beginning of this file. The class selectors can be found at the bottom.*/
+
+/*These are the "rules" applied for all the "body" in the HTML file*/
+/*The "box sizing" attribute to deal with sizing issues. Compatibility with old browser's version is included.*/
+/*The font-family attribute was randomly chosen*/
+/*The font-size attribute was chosen to try different ways to declare it.*/
+body{
+  font-family: sans-serif;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+    font-size: x-large;
+}
+
+/*The property margin was included in the "p" tag to improve the visibility. This property can be interpreted as the area between boxes since is the outer layer of the box components. The value defines 10px for all four margins. */
+p{
+  margin:10px;
+}
+
+/*Headers were boxified separately to enable different styles on them.*/
+h1{
+  font-family:sans-serif;
+  text-align:center;
+}
+
+h2{
+  color:red;
+  text-align:center;
+}
+
+li {
+    font-size: 20px;
+    line-height: 44px; 
+  /* each line of text should occupy 44 pixels of height (good for mobile usage and fat fingers) */
+}
+
+/*Class selectors start here*/
+.Toc{
+  background-color:black;
+  color:red;
+}
+.title{
+  background-color:white;
+  color:#CD0404;
+  font-family:sans-serif;
+  text-align: center;
+}
+/*The color was chosen randomly using the web developer tools and written in hexadecimal form to try different ways of doing it.*/
+
+/*The rule "display:flex" provides a container to manipulate the box positions. In this case the box are next to each other in a column.*/
+/*The border radius rule "softens" the borders of the boxes*/
+/*I tried a different way to declare the margin indicating the value 30px for the top and bottom margins and an auto value for the right and left margins.*/
+.lesson{
+  display:flex;
+  flex-direction:column;
+  background-color:black;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 30px auto;
+}
+.concept{
+  background-color:#CD0404;
+  border-radius: 20px;
+  padding: 10px;
+  color:black;
+  margin:10px;
+}
+.concept-title{
+  font-size:28px;
+  text-align: center;
+}
+
+/*The font-weight property with the "lighter" value sets the boldness of the font.*/
+.concept-description{
+  font-weight: lighter;
+  color:white;
+  margin:auto;
+}
+
+.image{
+    text-align: center;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>My first webpage: Notes by Alfredo Reyes</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+         <!-- This is an HTML comment. Coments are ignored by the computer. They are useful to leave notes for anyone who might this code later. -->
+    <div class="Toc">
+      <h1>Table of contents</h1>
+        <ol>
+          <li><a href="#lesson-1">Lesson 1: The basics of the web and HTML</a>
+            <ol type=a>
+              <li><a href="#lesson-1.a">How the web works</a></li>
+              <li><a href="#lesson-1.b">How coding works</a></li>
+              <li><a href="#lesson-1.c">HTML</a></li>
+              <li><a href="#lesson-1.d">HTML attributes: tags and elements</a></li>
+            </ol>
+            </li>
+          <li><a href="#lesson-2">Lesson 2: Creating a structured document with HTML</a>
+            <ol type=a>
+              <li><a href="#lesson-2.a">The tree-like structure of HTML</a></li>
+              <li><a href="#lesson-2.b">The relationship between HTML and CSS</a></li>
+              <li><a href="#lesson-2.c">Tools to write code</a></li>
+            </ol>
+            </li>
+          <li><a href="#lesson-3">Lesson 3: Adding CSS style and HTML structure</a>
+            <ol type=a>
+              <li><a href="#lesson-3.a">CSS's style control of HTML elements</a></li>
+              <li><a href="#lesson-3.b">Box sizing</a></li>
+              <li><a href="#lesson-3.c">Code, test, refine</a></li>
+            </ol>
+            </li>
+        </ol>
+    </div>
+     <!-- A table of content is included to improve the navigation. -->
+    
+    <div class="title">
+      <h1>Important concepts</h1>
+    </div>
+    <!-- The title was boxified separately fro flexibility in the future. -->
+    
+    <!-- Each lesson is boxified. I did it putting each lesson into it's own div.-->
+   
+   <!-- This is the beginning of lesson 1. -->
+    <div class="lesson">
+      <h2 id="lesson-1">Lesson 1: The basics of the web and HTML</h2>
+      
+      <!-- Each concept is also boxified. I did it putting each concept into it's own div.-->
+      <div class="concept">
+       <!-- Each concept title is boxified. -->
+       <div class="concept-title">
+         <h3 id="lesson-1.a">How the web works</h3>
+       </div>
+       <!-- Each concept description is boxified. -->
+       <div class="concept-description">
+         <p>The web is a collection of HTML documents. A browser requests to servers these documents using HTTP. A webpage is a text document written in a language called HTML. Web browsers read these documents, interpret them and display them. <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496">This video</a>
+  does a good job of explaining.</p> 
+       </div>
+
+       <!-- The link to the video was taken from the example found at http://learn-2-code.appspot.com/code_pen_examples/ -->
+     </div>
+     <!-- This is the end of the concept "How the web works". -->
+  
+     <div class="concept">
+       <div class="concept-title">
+        <h3 id="lesson-1.b">How coding works</h3>
+       </div>
+       <div class="concept-description">
+        <p>Coding happens when programmer write text in a language that a computer can understand. Computers are <em>stupid</em> and programmers need to write exactly the way that a computer will understand by using the correct syntax. </p>
+       </div>
+      </div>
+     <!-- This is the end of the concept "How coding works". -->
+  
+     <div class="concept">
+       <div class="concept-title">
+        <h3 id="lesson-1.c">HTML</h3>
+       </div>
+       <div class="concept-description">
+       <p>HTML documents contains text <b>content</b> (which represents <em>"what you see"</em>), <b>markups</b> (which represents <em>"what it looks like"</em>), <b>references</b> to other documents and <b>links</b> to other pages.</p>
+         <div class="image">
+           <img src="http://www.clker.com/cliparts/j/u/e/b/M/t/html-logo.svg" alt="error loading" width="250" height="250">
+         <!-- The original size of the image was reduced. -->
+         <!-- A separate box was included for the image inside the concept description. -->
+         </div>
+       </div>
+     </div>
+      <!-- This is the end of the concept "HTML". -->
+
+       <div class="concept">
+        <div class="concept-title">
+         <h3 id="lesson-1.d">HTML attributes: tags and elements</h3>
+        </div>
+         <div class="concept-description">
+        <p>HTML documents are made of HTML <b>elements</b>. When we write in HTML, the browsers interpret the type of each element using HTML <b>tags</b>.</p>
+        <p>A <b>tag</b> is always contained within angled brackets. Most tags have an opening tag and a closing tag. Some tags (called <em>"void"</em> tags do not require a closing tag.</p>
+        <p>An <b>element</b> refers to everything within a set of opening and closing tags.</p>
+        <p>An <b>attribute</b> is a property of an HTML element. Elements can be <em><b>inline</b></em> or <b><em>block</em></b>. The difference between these elements is that block elements form an "invisible box" around the content inside of them.</p>
+         </div>
+     </div>
+      <!-- This is the end of the concept "HTML attributes: tags and elements". -->
+    </div>
+    <!-- This is the end of lesson 1. -->
+
+   <!-- This is the beginning of lesson 2. -->
+    <div class="lesson">
+      <h2 id="lesson-2">Lesson 2: Creating a structured document with HTML</h2>
+
+      <div class="concept">
+       <div class="concept-title">
+         <h3 id="lesson-2.a">The tree-like structure of HTML</h3>
+        </div>
+        <div class="concept-description">
+        <p>A <a href="http://en.wikipedia.org/wiki/Tree_structure">tree structure</a> is a way of representing the hierarchical nature of a structure in a graphical form.</p>
+        <p>HTML controls the structure of a web page. The browser turns HTML tags into elements in a tree structure. It knows how to do it due to a standard convention for representing and interacting with elements in HTML called Documents Object Model (DOM).</p>
+        </div>
+      </div>
+     <!-- This is the end of the concept "The tree-like structure of HTML". -->
+
+      <div class="concept">
+       <div class="concept-title">
+        <h3 id="lesson-2.b">The relationship between HTML and CSS</h3>
+       </div>
+        <div class="concept-description">
+       <p>A document written in HTML defines the structure and content of a web page. CSS controls the style of a page allowing the programmer to change how elements look on a page.</p>
+       <p>In on order to tie structure and style together, the HTML document can provide the browser with information on what style to use and where to get it. </p>
+        </div>
+      </div>
+      <!-- This is the end of the concept "The relationship between HTML and CSS". -->  
+
+      <div class="concept">
+        <div class="concept-title">
+          <h3 id="lesson-2.c">Tools to write code</h3>
+       </div>
+        <div class="concept-description">
+       <p>A text editor is a program that helps to type text, similar to document editors, but helping the programmer. For example, creating closing tags whenever an open tag is used. During this course it is recommended to use Scratchpad, Codepen and Sublime Text.</p>
+        </div>
+      </div>
+      <!-- This is the end of the concept "Tools to write code". -->  
+    </div>
+    <!-- This is the end of lesson 2. -->
+    
+    <!-- This is the beginning of lesson 3. -->   
+    <div class="lesson">
+      <h2 id="lesson-3">Lesson 3: Adding CSS style and HTML structure</h2>
+
+      <div class="concept">
+       <div class="concept-title">
+         <h3 id="lesson-3.a">CSS's style control of HTML elements</h3>
+        </div>
+        <div class="concept-description">
+        <p>CSS controls the style of HTML elements using <em>selectors</em> (tags) to indicate the browser to apply rules to every element indicated by the selector. Everything indicated between the curly braces of the selector is interpreted as a rule. This rules are defined as <em>declaration</em> and composed by a property and the value of that property.</p>
+        <p>The style can be added to certain selectors using class selectors.</p>
+        </div>
+      </div>
+     <!-- This is the end of the concept "CSS's style control of HTML elements". -->
+
+      <div class="concept">
+       <div class="concept-title">
+         <h3 id="lesson-3.b">Box sizing</h3>
+        </div>
+        <div class="concept-description">
+        <p>HTML elements are boxes and each box has 4 components: margin, border, padding and content.</p>
+        <p>It can often be hard to get the size of a box just right because there are so many components. Therefore there are two techniques that can help with sizing issues:</p>
+          <ul>
+            <li>Set sizes in terms of percentages rather than pixels.</li>
+            <li>Set the <em>"box sizing"</em> attribute to <em>"border box"</em> for every element.</li>
+          </ul> 
+        </div>
+      </div>
+     <!-- This is the end of the concept "Box sizing". -->
+
+      <div class="concept">
+       <div class="concept-title">
+         <h3 id="lesson-3.c">Code, test, refine</h3>
+        </div>
+        <div class="concept-description">
+        <p>Look for natural boxes on the design and get the structure of the web page right boxifying it. Then look for repeated styles and semantic elements. Write some code, test and see how it looks against the design mockup and then make some refinements applying styles (from biggest to smallest) so that it looks closer to the design. Finally fix things and validate the code. Avoiding repetition provides consistency and it is important to prevent errors when the programmer decides to make changes. </p>
+        </div>
+      </div>
+     <!-- This is the end of the concept "Code, test, refine". -->
+    <!-- This is the end of lesson 3. -->
+  </div>
+    
+    
+    <p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="¡CSS Válido!" />
+    </a>
+</p>
+    
+    
+  </body>
+</html>
